@@ -6,7 +6,7 @@ body{
     min-width: 400px;
 }
 
-.column{
+.row{
     display: flex;
     flex-direction: row;
     height: 6.25%;
