@@ -1,11 +1,21 @@
 body{
     margin: 0px;
+    background-image: url("mountains.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 button{
     position: absolute;
-    left: 50%;  
-    top: 0;
+    left: 47%;  
+    top: 3%;
+    border-radius: 10%;
+    height: 30px;
+    width: 70px;
+    text-indent: 4px;
+    color: rgb(218, 190, 115);
+    background-color: grey;
+    border-color: black;
 }
 
 .container {
@@ -24,5 +34,5 @@ button{
 .cell{
     display: flex;
     flex-direction: column;
-    border: 0.5px solid blue;
+    border: 0.5px solid black;
 }

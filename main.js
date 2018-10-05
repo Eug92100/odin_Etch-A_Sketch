@@ -29,14 +29,14 @@ function hovering(){
     var cells = Array.from(document.querySelectorAll(".cell"));
     cells.forEach(function(cell) { 
         cell.addEventListener('mouseover', function(e){
-            e.target.style.backgroundColor = 'blue';
+            e.target.style.backgroundColor = 'rgba(200, 200, 200, 0.8)';
         });
     })
 }
 
 
 function restart(){
-    var nb = prompt("Choose the number of small squares!");
+    var nb = prompt("Choose the number of small squares!","16");
     gridRemove();
     gridCreation(nb);
     hovering();
