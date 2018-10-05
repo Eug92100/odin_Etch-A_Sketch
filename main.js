@@ -7,9 +7,11 @@ function gridCreation(parameter){
         const newRow = document.createElement("div");
         container.appendChild(newRow);
         newRow.classList.add("row");
+        newRow.style.height = (100 / parameter) + "%";
         for(var j = 1; j <= parameter; j++){
             const newCell = document.createElement("div");
             newCell.classList.add("cell");
+            newCell.style.width = (100 / parameter)+ "%";
             newRow.appendChild(newCell);
         }    
     }
@@ -17,19 +19,19 @@ function gridCreation(parameter){
 
 function gridRemove() {
     var row = document.querySelector(".row");
-    while(row != null){
-        console.log(row);
+    while(row != null){ 
         container.removeChild(row);
         row = document.querySelector(".row");  
-}
+    }
 }
 
 function hovering(){
     var cells = Array.from(document.querySelectorAll(".cell"));
     cells.forEach(function(cell) { 
         cell.addEventListener('mouseover', function(e){
-            e.target.setAttribute('style','background-color: blue;');
-        });})
+            e.target.style.backgroundColor = 'blue';
+        });
+    })
 }
 
 
